@@ -7,6 +7,10 @@ header, footer {
     background-color: rgb(152, 117, 152);
 }
 
+header {
+    padding: 1px 1px;
+}
+
 /*Class selector*/
 .site-title {
     color:deeppink;
@@ -24,7 +28,7 @@ main ul {
 
 main ul :nth-child(odd) {
     background-color: bisque;
-}url(http://127.0.0.1:5500/note.html)
+}
 
 /*styling the Navigation*/
 nav li {
