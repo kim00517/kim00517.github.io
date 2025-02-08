@@ -17,3 +17,20 @@ header, footer {
     box-shadow: 0px 0px 2px 1px black;
 }
 
+/*bullet to square & pick specific point*/
+main ul {
+    list-style-type: square;
+}
+
+main ul :nth-child(odd) {
+    background-color: bisque;
+}
+
+/*styling the Navigation*/
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
