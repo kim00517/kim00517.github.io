@@ -1,6 +1,6 @@
 html {
     background-color: #aad4cf;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 * {
@@ -30,12 +30,12 @@ nav li {
     height: 30px;
     width: 80px;
     text-align: start;
+    font-size: 18px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    box-shadow: 1px black;
 }
 
 nav ul {
@@ -45,11 +45,10 @@ nav ul {
     padding-left: 0;
     margin: 0;
     text-align: center;
-    position: ;
 }
 
 .home {
-    margin: 0 60px 0 90px;
+    margin: 0 70px 0 80px;
 }
 
 .story {
@@ -62,8 +61,8 @@ nav ul {
 
 .behind {
     width: 600px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     border: 0;
     background-image: url('../images/lone-starfish-wide.jpg');
     background-position: center;
@@ -74,7 +73,7 @@ nav ul {
     align-items: flex-end; /* Horizontally center the content */
     display: flex ;
     background-repeat: no-repeat; 
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .wrap {
@@ -93,8 +92,8 @@ nav ul {
     float: left;
 }
 
-.bodyp {
-    font-size: 12px;
+main div p, ul{
+    font-size: 11px;
 }
 
 h3 {
@@ -106,13 +105,12 @@ main li {
     margin: 0 0 0 20px;
 }
 
-.contact {
+.square {
     box-shadow: 0 0 1px 1px black;
     margin: 5px 0 0 0;
 }
 
 form div{
-    
     margin: 2px;
     padding:2px;
 }
