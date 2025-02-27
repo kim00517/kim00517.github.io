@@ -69,8 +69,8 @@ nav ul {
     background-size: 100% auto;
     text-align: center;
     height: 180px;
-    justify-content: center; /* Vertically center the content */
-    align-items: flex-end; /* Horizontally center the content */
+    justify-content: center; 
+    align-items: flex-end; 
     display: flex ;
     background-repeat: no-repeat; 
     padding-bottom: 20px;
@@ -97,8 +97,7 @@ main div p, ul{
 }
 
 h3 {
-    clear: both;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 10px 0 ;
 }
 
 main li {
@@ -120,15 +119,10 @@ form div div input {
 }
 
 .up {
-    margin:10px 2px 2px 2px;
+    margin:15px 2px 2px 2px;
 }
 
-.ask {
-    margin:10px;
-    padding: 2px;
-}
-
-.pick {
+form div {
     margin:5px;
     padding: 2px;
 }
@@ -136,21 +130,22 @@ form div div input {
 .message {
     height: 60px;
     padding: 1px;
-    overflow-y: auto; 
     font-size:16px;
-    white-space: pre-wrap;
-    outline: none;
     width: 98%; 
 }
 
-button {
-        margin: 5px;
-        width: 50px;
-        height: 30px;
-        background-color: aliceblue;
-        border: 0.5px solid #575454;
+form {
+    font-size: 80%;
 }
 
+button {
+        margin: 5px 5px 10px 5px;
+        width: 40px;
+        height: 30px;
+        background-color: azure;
+        border: 0.5px solid #575454;
+        font-size: 12px;
+}
 
 .footer {
     text-align: left;
