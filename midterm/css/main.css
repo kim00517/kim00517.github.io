@@ -12,16 +12,35 @@ html {
 /* clean the default page setting */
 
 .head {
-    background-color: azure;
+    /* background-color: azure; */
+    position: relative; /*^^*/
     width: 600px ;
     margin: 0 200px; /*no margin for vertical side, but margin for horizontal side*/
     height: 220px;
-    box-sizing: content-box;
-    display: block;
+    overflow: hidden; /*^^*/
+    /* box-sizing: content-box;
+    display: block; */
 }
 
-h1 {
-    color:white;
+.head .behind img {
+    width: 100%; /* Make the image span the full width of the header */
+    height: 100%; /* Make the image span the full height of the header */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    position: absolute; /* Position the image inside the container */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Set a lower z-index for the image */
+}
+
+.head h1 {
+    position: absolute; /* Position the text over the image */
+    top: 70%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust the text to be truly centered */
+    color: white; /* Make the text white to stand out against the image */
+    font-size: 2em; /* Increase the font size for visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better contrast */
+    z-index: 2; /* Set a higher z-index to ensure text is above the image */
 }
 
 nav li {
@@ -54,7 +73,7 @@ nav a {
 
 .behind {
     width: 600px;
-    background-image: url('../images/lone-starfish-wide.jpg');
+    /* background-image: url('../images/lone-starfish-wide.jpg'); */
     background-position: center;
     background-size: 100% auto;
     text-align: center;
