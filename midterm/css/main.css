@@ -12,12 +12,12 @@ html {
 /* clean the default page setting */
 
 .head {
-    /* background-color: azure; */
+    background-color: azure;
     position: relative; /*^^*/
     width: 600px ;
     margin: 0 200px; /*no margin for vertical side, but margin for horizontal side*/
     height: 220px;
-    overflow: hidden; /*^^*/
+    /* overflow: hidden; ^^ */
     /* box-sizing: content-box;
     display: block; */
 }
@@ -58,6 +58,14 @@ nav a {
 }
 /* omit the underline and change color */
 
+nav {
+    position: relative; /* Default positioning, can be adjusted */
+    z-index: 3; /* Ensure the nav is above the image */
+    background-color: azure; /* Optional: add a background to the nav for contrast */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
 .home {
     margin: 0 70px 0 80px;
 }
@@ -87,11 +95,12 @@ nav a {
 
 .wrap {
     background-color: azure;
-    padding: 0 5px 2px 5px ; /*different padding zone from the head*/
-    border: 0 3px; /*different border zone from the head*/
-    margin: 0 200px 5px 200px; /*same horizontal margin as head*/
+    padding: 10px ; /*different padding zone from the head*/
+    /* border: 0 3px; different border zone from the head */
+    margin: 0 200px 10px 200px; /*same horizontal margin as head*/
     box-sizing: border-box;
     width: 600px; /*same as the horizontal size of image in head*/
+    z-index: 5; /* Ensure the nav is above the image */
 }
 
 .bodyi {
