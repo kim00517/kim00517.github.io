@@ -19,7 +19,7 @@ html {
     height: 220px;
 }
 
-.head .behind img {
+.head img {
     width: 100%; 
     background-size: cover;
     position: absolute; 
