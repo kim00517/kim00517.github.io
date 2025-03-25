@@ -5,114 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kim00517 final</title>
     <script src="https://kit.fontawesome.com/fd58c3823a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <!-- header with nav+h1 -->
     <header>
         <!-- nav with 6 list- 5 menu + 1 form for search -->
-        <div>
-            <img src="images/logo.png" alt="three stars" width="50px">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li>
-                        <form action="/search" method="get">
-                          <input type="text" name="query" placeholder="Search">
-                          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <section class="menu">
+            <div class="logo">
+                <img src="images/logo.png" alt="three stars" width="50px">
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li class="h"><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="s">
+                            <form action="#" method="get">
+                            <input type="text" name="query" placeholder="Search"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
         <!-- h1 with form for link to Contact -->
-        <div>
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto temporibus deserunt animi voluptates, quisquam saepe. Ex, ipsum. Distinctio nesciunt quam ipsum vitae qui, similique beatae nisi ipsam consequuntur dicta!</p>
-            <form action="#contact_us">
-                <button type="submit">Connect with us<i class="fa-solid fa-caret-right"></i></button>
-            </form>
-        </div>
+        <section class="wrapper_head">
+            <div class="head">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto temporibus deserunt animi voluptates, quisquam saepe. Ex, ipsum. Distinctio nesciunt quam ipsum vitae qui, similique beatae nisi ipsam consequuntur dicta!</p>
+                <form action="#contact_us">
+                    <button type="submit">Connect with us<i class="fa-solid fa-caret-right"></i></button>
+                </form>
+            </div>
+        </section>
     </header>
     <main>
-        <div class="about_us">
-            <img src="images/about-us.jpg" alt="about us" width="400px">
+        <section class="about_us">
+            <img src="images/about-us.jpg" alt="about us" class="img">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil delectus amet aliquid quibusdam accusantium velit? Dolores ullam, debitis nesciunt at possimus ad iste accusamus repellat consequuntur praesentium qui quae.</p>
-        </div>
-        <div class="our_services">
+        </section>
+        <section class="our_services">
             <h2>Our Services</h2>
                 <div>
-                    <img src="images/digital.jpg" alt="digital trasformation" width="400px">
+                    <img src="images/digital.jpg" alt="digital trasformation">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis mollitia amet hic nesciunt iusto, incidunt dicta ab atque ea provident, consectetur adipisci a sapiente optio assumenda soluta eum doloremque nam.</p>
                     <form action="#"><button type="submit">Digital Plans<i class="fa-solid fa-caret-right"></i></button></form>
                 </div>
                 <div>
-                    <img src="images/marketing.jpg" alt="marketing" width="400px">
+                    <img src="images/marketing.jpg" alt="marketing">
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit officiis dolor excepturi aliquam, quidem unde sunt dolorum ea doloremque repellendus repellat ut qui maxime minus rem possimus vero accusamus sint.</p>
                     <form action="#"><button type="submit">Marketing Plans<i class="fa-solid fa-caret-right"></i></button></form>
                 </div>
                 <div>
-                    <img src="images/video.jpg" alt="video" width="400px">
+                    <img src="images/video.jpg" alt="video">
                     <h3>Video Production</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In facere quas iusto explicabo sed repudiandae. Blanditiis natus qui enim eius, iusto illum omnis, beatae nulla, non quos nemo unde quaerat?</p>
                     <form action="#"><button type="submit">Video Plans<i class="fa-solid fa-caret-right"></i></button></form>
                 </div>
                 <div>
-                    <img src="images/web.jpg" alt="web" width="400px">
+                    <img src="images/web.jpg" alt="web">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum perspiciatis ipsa doloremque doloribus quidem, dolores expedita numquam aliquid odit necessitatibus pariatur error reiciendis qui facilis soluta adipisci. Accusamus, repellendus.</p>
                     <form action="#"><button type="submit">Web Plans<i class="fa-solid fa-caret-right"></i></button></form>
                 </div>
                 <div>
-                    <img src="images/print.jpg" alt="print" width="400px">
+                    <img src="images/print.jpg" alt="print">
                     <h3>Print</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat et earum architecto dicta quae doloremque, cum hic molestias libero minus recusandae maiores, ducimus dolorum eum aperiam veritatis minima fugit? Quis.</p>
                     <form action="#"><button type="submit">Print Plans<i class="fa-solid fa-caret-right"></i></button></form>
                 </div>
-        </div>
-        <div class="our_vision">
+        </section>
+        <section class="our_vision">
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ex consectetur quaerat quos. Suscipit eos, facilis dolores deleniti eius recusandae eum natus minus ab, fugiat dolor tempore distinctio architecto hic?</p>
-            <form action="#"><button type="submit">Learn More O</button></form>
-        </div>
-        <div class="our_team">
+            <form action="#"><button type="submit">Learn More<i class="fa-solid fa-caret-right"></i></button></form>
+        </section>
+        <section class="our_team">
             <h2>Our Team</h2>
                 <div>
-                    <img src="images/john.jpg" alt="john" width="400px">
+                    <img src="images/john.jpg" alt="john">
                 </div>
                 <div>
                     <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4> <hr>
+                    <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis velit reprehenderit est temporibus voluptates provident cumque earum alias adipisci perspiciatis, cupiditate assumenda quidem repudiandae aliquam error ut vel laboriosam?</p>
                 </div>
                 <div>
-                    <img src="images/bob.jpg" alt="bob" width="400px">
+                    <img src="images/bob.jpg" alt="bob">
                 </div>
                 <div>
                     <h3>Bob Rite</h3>
-                    <h4>CEO and Co-owner</h4> <hr>
+                    <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum qui consequatur unde accusamus quaerat perferendis dolores voluptatibus aut quisquam ex, repudiandae impedit quos esse eligendi quia quis laboriosam at. Inventore!</p>
                 </div>
-        </div>
-        <div class="contact_us">
+        </section>
+        <section class="contact_us">
             <h2>Contact Us</h2>
                 <div class="message">
                     <h3>Send us a message</h3>   
-                        <form action="index.html" method="post">
+                        <form action="#" method="post">
                             <div>
-                                <div class="up"><label for="fullname">Name</label></div>
-                                <div><input id="fullname" type="text"></div>
+                                <div><label for="fullname">Name</label></div>
+                                <div><input id="fullname" type="text" name="fullname"></div>
                                 <div><label for="email">Email</label></div>
-                                <div><input id="email" type="text"></div>
+                                <div><input id="email" type="email" name="email"></div>
                                 <div><label for="message">Message</label></div>
-                                <div><textarea id="message" class="message"></textarea></div> 
+                                <div><textarea id="message" name="message"></textarea></div> 
                                 <div><button type="submit">Send</button></div>
                             </div>
                         </form>        
@@ -120,7 +128,6 @@
                 <div class="hour">
                     <h3>Hours of operation</h3>
                     <table>
-                        <caption></caption>
                         <thead>
                             <tr>
                                 <th>Days</th>
@@ -141,12 +148,12 @@
                 </div>
                 <div class="location">
                     <h3>Location</h3>
-                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.795469137516!2d-75.76566894156383!3d45.349844437153024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z7JWM6rOk7YKoIOuMgO2VmSAtIOyYpO2DgOyZgCDsuqDtjbzsiqQ!5e0!3m2!1sko!2sca!4v1742905092345!5m2!1sko!2sca" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.795469137516!2d-75.76566894156383!3d45.349844437153024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z7JWM6rOk7YKoIOuMgO2VmSAtIOyYpO2DgOyZgCDsuqDtjbzsiqQ!5e0!3m2!1sko!2sca!4v1742905092345!5m2!1sko!2sca" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-        </div>
+        </section>
     </main>
     <footer> 
-        <p>Copyright Three Star Media, 2025</p> 
+        <p>&copy;Copyright Three Star Media, 2025</p> 
         <p>All images are taken from Unsplash</p>
     </footer>
 </body>

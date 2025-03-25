@@ -1,0 +1,162 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    width: auto;
+  }
+
+.logo {
+    background-color: #c78c06;
+    height: 100px;
+    margin: 0;
+}
+
+.nav {
+    background-color: #222;
+    margin: 0;
+}
+
+nav a {
+    color:#c78c06;
+    text-decoration: none;
+
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    max-width: 700px;
+    padding: 10px;
+    margin: 10px;
+}
+
+li.h a{
+    background-color: #c78c06;
+    height: 30px;
+    display: block;
+    color:#222;
+    padding: 20px 30px 10px 30px; 
+    margin: 0;
+}
+
+
+.wrapper_head {
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display:flex;
+    margin: 0 0 10px 0;
+  }
+  
+  .head {
+    background-color: hsl(0, 0%, 13%, 0.5);
+    text-align: center;
+    margin: 40px auto;
+    background-position: center;
+    color: white;
+    z-index: 0;
+  }
+
+  .head button {
+    color: #222;
+    background-color:#c78c06 ;
+    padding: 20px;
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+.head i {
+    color: #222;
+    background-color: #c78c06;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+  img {
+    max-width: 700px;
+  }
+ 
+  .about_us {
+    width: 100%;
+    background-color: #ffe6ac;
+  }
+
+  .about_us p {
+    margin: 10px;
+  }
+
+.our_services div {
+    background-color: #ffe6ac;
+    margin: 5px auto;
+}
+
+.our_services button {
+    color: white;
+    background-color: #222;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.our_services i {
+    color: white;
+    background-color: #222;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+ 
+.our_vision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    color: white;
+    padding: 10px;
+}
+  
+.our_vision button {
+    color: white;
+    background-color: #222;
+    opacity: 0.7;
+    padding: 20px;
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+.our_vision i {
+    color: white;
+    background-color: #222;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+.our_team div{
+    background-color: #ffe6ac;
+    margin: 5px auto;
+}
+
+table {
+    border-collapse: collapse;    
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #222;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:#ffe6ac;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color:#c78c06;
+    padding: 5px;
+}
