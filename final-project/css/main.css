@@ -94,9 +94,9 @@ li.h a{
 .our_services button {
     color: white;
     background-color: #222;
-    padding: 20px;
-    margin: 20px;
-    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
 }
 
 .our_services i {
@@ -104,7 +104,7 @@ li.h a{
     background-color: #222;
     padding: 5px;
     margin: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
  
 .our_vision {
@@ -142,6 +142,7 @@ li.h a{
 table {
     border-collapse: collapse;    
     width: 100%;
+    table-layout: fixed;
 }
 
 th, td {
@@ -155,8 +156,85 @@ th {
     text-align: center;
 }
 
+.location .message{
+    max-width: 700px;
+}
+
 footer {
     background-color: #222;
     color:#c78c06;
     padding: 5px;
+}
+
+@media screen and (min-width: 760px) {
+
+    nav li {
+        display:inline-block;
+        margin: 0 auto;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0 auto;
+    }
+
+    .about_us img{
+        float: left;
+        width: 50%;
+        padding: 5px;
+        margin: 5px 5px 5px 40px;
+    }
+
+    .dt {
+        grid-area: dt;
+    }
+    
+    .mk {
+        grid-area: mk;
+    }
+
+    .vd {
+        grid-area: vd;
+    }
+    
+    .wd {
+        grid-area: wd;
+    }
+
+    .pt {
+        grid-area: pt;
+    }
+    
+    .our_services div {
+        margin: 5px;
+    }
+
+    .our_services img {
+        width: 100%;
+        height: auto;
+    }
+
+    .our_services button {
+        width: 90%;
+        height: auto;
+    }
+
+    .our_services {
+        display: grid;
+        margin: 0 5px;
+        max-width: 900px;
+        gap: 5px;
+        align-items: center;
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-areas: 
+            "dt dt dt mk mk mk"
+            "vd vd wd wd pt pt" 
+            ;
+        grid-auto-columns: minmax(240px, auto);
+    }
+
+    .our_vision div{
+        max-width: 600px;
+        height: auto;
+    }
 }
