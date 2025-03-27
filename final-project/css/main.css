@@ -17,23 +17,22 @@
 nav a {
     color:#c78c06;
     text-decoration: none;
-
 }
 
 nav li {
     list-style-type: none;
     text-align: center;
-    max-width: 700px;
     padding: 10px;
     margin: 10px;
 }
 
 li.h a{
     background-color: #c78c06;
-    height: 30px;
+    height: 25px;
+    text-align: center center;
     display: block;
     color:#222;
-    padding: 20px 30px 10px 30px; 
+    padding: 15px 30px 15px 30px; 
     margin: 0;
 }
 
@@ -43,19 +42,23 @@ li.h a{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 600px;
-    display:flex;
+    height: auto;
+    display: flex;
     margin: 0 0 10px 0;
   }
   
   .head {
     background-color: hsl(0, 0%, 13%, 0.5);
-    text-align: center;
+    text-align: left;
     margin: 40px auto;
     background-position: center;
     color: white;
-    z-index: 0;
+    height: 470px;
   }
+
+.head h1 {
+    font-size: 4rem;
+}
 
   .head button {
     color: #222;
@@ -73,19 +76,29 @@ li.h a{
     font-size: 1.5rem;
 }
 
-  img {
-    max-width: 700px;
+ .head img {
+    width: 100%;
   }
  
   .about_us {
-    width: 100%;
     background-color: #ffe6ac;
-  }
+    width: 100%;
+ }
 
-  .about_us p {
+  .about_us h2,p {
+    padding: 5px;
     margin: 10px;
+    text-align: left;
   }
+  
 
+  .about_us img {
+    width: 97%;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-items: center;
+
+}
 .our_services div {
     background-color: #ffe6ac;
     margin: 5px auto;
@@ -107,6 +120,10 @@ li.h a{
     font-size: 1rem;
 }
  
+.our_services img{
+    width:100%;
+}
+
 .our_vision {
     background-image: url("../images/vision.jpg");
     background-repeat: no-repeat;
@@ -116,7 +133,7 @@ li.h a{
     color: white;
     padding: 10px;
 }
-  
+
 .our_vision button {
     color: white;
     background-color: #222;
@@ -168,21 +185,56 @@ footer {
 
 @media screen and (min-width: 760px) {
 
+    .logo {
+        float: left;
+        background-color: #222;
+    }
+
+    .logo img {
+        width: 70px;
+        padding: 20px 0;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #222;
+        height: 100px;
+    }
+
     nav li {
         display:inline-block;
+        padding: 0 auto;
         margin: 0 auto;
+        width: auto;
     }
 
     nav a {
         display: inline-block;
         padding: 0 auto;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    nav button {
+        max-width:100px;
+    }
+
+    .head {
+        width: 80%;
+        height: auto;
     }
 
     .about_us img{
         float: left;
-        width: 50%;
+        width: 45%;
         padding: 5px;
         margin: 5px 5px 5px 40px;
+    }
+    
+    .about_us {
+        display: table;
+        min-height: 250px;
     }
 
     .dt {
@@ -237,4 +289,5 @@ footer {
         max-width: 600px;
         height: auto;
     }
+    
 }
