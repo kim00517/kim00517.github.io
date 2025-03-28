@@ -91,7 +91,6 @@ li.h a{
     text-align: left;
   }
   
-
   .about_us img {
     width: 97%;
     margin: 10px;
@@ -124,6 +123,12 @@ li.h a{
     width:100%;
 }
 
+.our_vision h3 {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
 .our_vision {
     background-image: url("../images/vision.jpg");
     background-repeat: no-repeat;
@@ -151,9 +156,18 @@ li.h a{
     font-size: 1.5rem;
 }
 
+.our_team img{
+    width: 100%;
+}
+
 .our_team div{
+    display: flex;
     background-color: #ffe6ac;
-    margin: 5px auto;
+    width: 100%;
+}
+
+.our_team div article {
+    margin:10px;
 }
 
 table {
@@ -290,4 +304,8 @@ footer {
         height: auto;
     }
     
+    .our_team div {
+        
+    }
+
 }
