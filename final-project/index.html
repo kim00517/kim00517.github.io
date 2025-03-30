@@ -13,21 +13,23 @@
 <body>
     <!-- header with nav+h1 -->
     <header>
-        <!-- nav with 6 list- 5 menu + 1 form for search -->
+        
+        <!-- 1st section for nav (logo img + with 6 list- 5 menu + 1 form for search) -->
         <section class="menu">
+            <!-- logo img -->
             <div class="logo">
-                <img src="images/logo.png" alt="three stars" width="50px">
+                <img src="images/logo.png" alt="three stars" width="50">
             </div>
+            <!-- nav with form -->
             <div class="nav">
                 <nav>
                     <ul>
-                        <li class="h"><a href="#">Home</a></li>
+                        <li ><a href="#">Home</a></li> <!--class for wrap-->
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li class="s">
-                            <form action="#" method="get">
+                        <li><form action="#" method="get">
                             <input type="text" name="query" placeholder="Search"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </li>
@@ -35,8 +37,10 @@
                 </nav>
             </div>
         </section>
-        <!-- h1 with form for link to Contact -->
+        
+        <!-- 2nd section for h1 (with form for link to Contact) -->
         <section class="wrapper_head">
+            <!-- h1 + p + form -->
             <div class="head">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto temporibus deserunt animi voluptates, quisquam saepe. Ex, ipsum. Distinctio nesciunt quam ipsum vitae qui, similique beatae nisi ipsam consequuntur dicta!</p>
@@ -46,39 +50,51 @@
             </div>
         </section>
     </header>
+
+    <!-- main content -->
     <main>
+        
+        <!-- 1st main section : about us -->
         <section class="about_us">
             <img src="images/about-us.jpg" alt="about us" class="img">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil delectus amet aliquid quibusdam accusantium velit? Dolores ullam, debitis nesciunt at possimus ad iste accusamus repellat consequuntur praesentium qui quae.</p>
         </section>
-        <section>
+        
+        <!-- 2nd main section : services -->
+        <section class="our_services">
             <h2>Our Services</h2>
-                <div class=" our_services">
+                <!-- wrapper for services -->
+                <div class="services">
+                    <!-- class for grid -->
                     <div class="dt">
                         <img src="images/digital.jpg" alt="digital trasformation">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis mollitia amet hic nesciunt iusto, incidunt dicta ab atque ea provident, consectetur adipisci a sapiente optio assumenda soluta eum doloremque nam.</p>
                         <form action="#"><button type="submit">Digital Plans<i class="fa-solid fa-caret-right"></i></button></form>
                     </div>
+                    <!-- class for grid -->
                     <div class="mk">
                         <img src="images/marketing.jpg" alt="marketing">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit officiis dolor excepturi aliquam, quidem unde sunt dolorum ea doloremque repellendus repellat ut qui maxime minus rem possimus vero accusamus sint.</p>
                         <form action="#"><button type="submit">Marketing Plans<i class="fa-solid fa-caret-right"></i></button></form>
                     </div>
+                    <!-- class for grid -->
                     <div class="vd">
                         <img src="images/video.jpg" alt="video">
                         <h3>Video Production</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In facere quas iusto explicabo sed repudiandae. Blanditiis natus qui enim eius, iusto illum omnis, beatae nulla, non quos nemo unde quaerat? adipisci. Accusamus, repellendus.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In facere quas iusto explicabo sed repudiandae. Blanditiis natus qui enim eius, iusto illum omnis, beatae nulla, non quos nemo unde quaerat? adip repellendus.</p>
                         <form action="#"><button type="submit">Video Plans<i class="fa-solid fa-caret-right"></i></button></form>
                     </div>
+                    <!-- class for grid -->
                     <div class="wd">
                         <img src="images/web.jpg" alt="web">
                         <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum perspiciatis ipsa doloremque doloribus quidem, dolores expedita numquam aliquid odit necessitatibus pariatur error reiciendis veritatis qui facilis soluta.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum perspiciatis ipsa doloremque doloribus quidem, dolores expedita numquam aliquid odit necessitatibus pariatur reiciendis veritatis qui facilis soluta.</p>
                         <form action="#"><button type="submit">Web Plans<i class="fa-solid fa-caret-right"></i></button></form>
                     </div>
+                    <!-- class for grid -->
                     <div class="pt">
                         <img src="images/print.jpg" alt="print">
                         <h3>Print</h3>
@@ -87,6 +103,8 @@
                     </div>
                 </div>    
         </section>
+        
+        
         <section class="our_vision">
             <div>
             <h3>Our Vision</h3>
@@ -94,31 +112,45 @@
             <form action="#"><button type="submit">Learn More<i class="fa-solid fa-caret-right"></i></button></form>
             </div>
         </section>
+        
+        
         <section class="our_team">
             <h2>Our Team</h2>
-                <div>
+        
+            <div class="team">
+        
+                <div class="child one">
                     <img src="images/john.jpg" alt="john">
                 </div>
-                <div>   
+        
+                <div class="child two">   
                     <article>
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis velit reprehenderit est temporibus voluptates provident cumque earum alias adipisci perspiciatis, cupiditate assumenda quidem repudiandae aliquam error ut vel laboriosam?</p>
                     </article>
                 </div>
-                <div>
+        
+                <div class="child three">
                     <img src="images/bob.jpg" alt="bob">
                 </div>
-                <div>
+        
+                <div class="child four">
                     <article>
                     <h3>Bob Rite</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum qui consequatur unde accusamus quaerat perferendis dolores voluptatibus aut quisquam ex, repudiandae impedit quos esse eligendi quia quis laboriosam at. Inventore!</p>
                     </article>    
                 </div>
+            </div>
         </section>
+        
+        
         <section class="contact_us">
             <h2>Contact Us</h2>
+        
+            <div class="contact">
+        
                 <div class="message">
                     <h3>Send us a message</h3>   
                         <form action="#" method="post">
@@ -128,11 +160,12 @@
                                 <div><label for="email">Email</label></div>
                                 <div><input id="email" type="email" name="email"></div>
                                 <div><label for="message">Message</label></div>
-                                <div><textarea id="message" name="message"></textarea></div> 
+                                <div><textarea id="message" name="message" class="mess"></textarea></div> 
                                 <div><button type="submit">Send</button></div>
                             </div>
                         </form>        
                 </div>
+        
                 <div class="hour">
                     <h3>Hours of operation</h3>
                     <table>
@@ -154,12 +187,16 @@
                         </tbody>
                     </table>
                 </div>
+        
                 <div class="location">
                     <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.795469137516!2d-75.76566894156383!3d45.349844437153024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z7JWM6rOk7YKoIOuMgO2VmSAtIOyYpO2DgOyZgCDsuqDtjbzsiqQ!5e0!3m2!1sko!2sca!4v1742905092345!5m2!1sko!2sca" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.795469137516!2d-75.76566894156383!3d45.349844437153024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z7JWM6rOk7YKoIOuMgO2VmSAtIOyYpO2DgOyZgCDsuqDtjbzsiqQ!5e0!3m2!1sko!2sca!4v1742905092345!5m2!1sko!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
         </section>
     </main>
+    
+    
     <footer> 
         <p>&copy;Copyright Three Star Media, 2025</p> 
         <p>All images are taken from Unsplash</p>

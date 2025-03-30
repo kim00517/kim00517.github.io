@@ -1,17 +1,28 @@
 * {
     font-family: "Open Sans", sans-serif;
     width: auto;
+    margin: 0;
+    padding: 0;
   }
+
+.menu {
+    background-color: #c78c06;
+}
 
 .logo {
     background-color: #c78c06;
     height: 100px;
     margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
     background-color: #222;
     margin: 0;
+    padding: 0;
+    display: block;
 }
 
 nav a {
@@ -22,20 +33,32 @@ nav a {
 nav li {
     list-style-type: none;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    justify-content: center;
+    padding: 5px 0 ;
+    margin: 5px 0;
 }
 
-li.h a{
-    background-color: #c78c06;
-    height: 25px;
-    text-align: center center;
+nav li:nth-child(1) a{
+    /* background-color: #c78c06; */
+    /* height: 20px; */
+    width: 100%;
+    /* text-align: center center; */
     display: block;
     color:#222;
-    padding: 15px 30px 15px 30px; 
-    margin: 0;
 }
 
+nav li:nth-child(1){
+    background-color: #c78c06;
+    height: 20px;
+    text-align: center center;
+    /* display: block; */
+    color:#222;
+    padding: 15px 30px; 
+}
+
+nav li input{
+    width: 92%;
+}
 
 .wrapper_head {
     background-image: url("../images/main-banner.jpg");
@@ -96,22 +119,40 @@ li.h a{
     margin: 10px;
     flex-wrap: wrap;
     justify-items: center;
-
+    align-items: center;
 }
-.our_services div {
+
+.our_services {
+    margin: 10px;
+    width: 98%;
+}
+
+.services div {
     background-color: #ffe6ac;
-    margin: 5px auto;
+    margin: 10px auto;
+    padding: 0 0 50px 0;
+    width: 98%;
 }
 
-.our_services button {
+.services h3 {
+    padding: 5px;
+    margin: 5px;
+}
+
+.services p{
+    padding: 0 0 20px 0;
+    margin: 10px;
+}
+
+.services button {
     color: white;
     background-color: #222;
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     font-size: 1rem;
 }
 
-.our_services i {
+.services i {
     color: white;
     background-color: #222;
     padding: 5px;
@@ -119,7 +160,7 @@ li.h a{
     font-size: 1rem;
 }
  
-.our_services img{
+.services img{
     width:100%;
 }
 
@@ -156,23 +197,49 @@ li.h a{
     font-size: 1.5rem;
 }
 
-.our_team img{
+.our_team {
+    margin: 10px;
+    width: 98%;
+}
+
+.team img{
     width: 100%;
 }
 
-.our_team div{
+.team div{
     display: flex;
     background-color: #ffe6ac;
-    width: 100%;
+    width: 98%;
+    /* margin: 0 10px; */
 }
 
-.our_team div article {
+.team div article {
     margin:10px;
+}
+
+.contact_us {
+    margin: 10px;
+    width: 98%;
+}
+
+/* .contact {
+    width: 98%;
+    margin: 0 10px;
+} */
+
+.contact input, textarea {
+    width: 98%;
+}
+
+.mess {
+    font-size: 16px;
+    height: 80px;
+    resize: none;
 }
 
 table {
     border-collapse: collapse;    
-    width: 100%;
+    width: 98%;
     table-layout: fixed;
 }
 
@@ -187,8 +254,16 @@ th {
     text-align: center;
 }
 
-.location .message{
-    max-width: 700px;
+.location {
+    display: block;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.location iframe {
+    width: 98%;
+    aspect-ratio: 3 / 2;
+    border: 0;
 }
 
 footer {
@@ -271,41 +346,112 @@ footer {
         grid-area: pt;
     }
     
-    .our_services div {
+    .services div {
         margin: 5px;
     }
 
-    .our_services img {
+    .services img {
         width: 100%;
         height: auto;
     }
 
-    .our_services button {
-        width: 90%;
-        height: auto;
-    }
-
-    .our_services {
+    .services {
         display: grid;
-        margin: 0 5px;
-        max-width: 900px;
+        margin-left: 5%;
+        max-width: 90%;
         gap: 5px;
-        align-items: center;
+        /* align-items: center; */
         grid-template-columns: repeat(6, 1fr); 
         grid-template-areas: 
             "dt dt dt mk mk mk"
             "vd vd wd wd pt pt" 
             ;
-        grid-auto-columns: minmax(240px, auto);
+        /* grid-auto-columns: minmax(240px, auto); */
     }
+
+    .services div {
+        position: relative;
+    }
+
+    .services button {
+        width: 90%;
+        position: absolute;
+        top: 85%;
+        left: 2%;
+    }
+
+    /* .our_services button, p {
+        display: block;
+    } */
 
     .our_vision div{
         max-width: 600px;
         height: auto;
     }
     
-    .our_team div {
-        
+    .team {
+        /* height: 600px; */
+        margin-left: 5%;
+        max-width: 90%; 
+        display: flex;
+        flex-direction: row; /*column, it would be horizontal*/
+        flex-wrap: wrap; /*nowrap*/
+        justify-content: space-between; /*do not change order, but change the strating point + around=same margin vs evenly=same interval vs between= no margin at the end*/
+        align-items: stretch;
     }
 
+    .team img {
+        object-fit: cover;     
+    }
+
+    .one {
+        flex-basis: 50%;
+        order: 1;
+        margin: 0;
+    }
+
+    .two {
+        flex-basis: 50%;
+        order: 2;
+        margin: 0;
+    }
+
+    .three {
+        flex-basis: 50%;
+        order: 4;
+    }
+    .four {
+        flex-basis: 50%;
+        order: 3;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row; /*column, it would be horizontal*/
+        flex-wrap: wrap; /*nowrap*/
+        align-items: flex-start;
+        width: 93%;
+        gap: 10px;
+        margin-left: 5%;
+    }
+
+   h2 {
+        margin-left : 5%;
+    }
+
+    .message {
+        flex-basis: calc(48% - 4px);
+        order: 1;
+    }
+
+    .location {
+        flex-basis: 49%;
+        order: 2;
+    }
+
+    .hour {
+        flex-grow: 2;
+        order: 3;
+        max-width: 96%;
+    }
 }
