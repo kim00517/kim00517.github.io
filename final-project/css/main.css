@@ -244,6 +244,11 @@ p {
     /* margin: 0 10px; */
 }
 
+.team h4 {
+    margin: 10px;
+    border-bottom: 2px solid #c78c06;
+}
+
 .team .two,.four {
     margin-bottom: 10px;
 }
@@ -258,13 +263,12 @@ p {
     margin-top: 30px;
 }
 
-/* .contact {
-    width: 98%;
-    margin: 0 10px;
-} */
-
 .contact input, textarea {
     width: 98%;
+}
+
+h2 {
+    margin: 30px 0;
 }
 
 .contact_us button {
@@ -291,6 +295,7 @@ th, td {
     border: 1px solid #222;
     padding: 8px;
     text-align: left;
+    height: 2rem;
 }
 
 th {
@@ -321,37 +326,62 @@ footer {
     .logo {
         float: left;
         background-color: #222;
+        padding: 10px;
     }
 
     .logo img {
-        width: 70px;
-        padding: 20px 0;
+        width: 60px;
+        padding: 40px 0;
+        margin: 40px;
+        margin-left: 70px;
     }
     
     .nav {
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
-        background-color: #222;
-        height: 100px;
+        background-color: #222; */
+        height: 120px;
     }
 
+        /* .nav nav ul {
+            display: flex;
+            gap: 4%; 
+            justify-content:  space-between ;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            max-width: 80%;
+        }
+         */
+        /* .nav input {
+            width: auto;
+        }
+     */
     nav li {
         display:inline-block;
-        padding: 0 auto;
-        margin: 0 auto;
-        width: auto;
+        /* padding: 0 auto;
+        margin: 0 auto; */
+        margin-right: calc(5% - 2px);
+        margin-top: 35px;
+        white-space: nowrap;
+        /* max-width: 80%; */
+        /* gap: 3%; */
     }
 
-    nav a {
+    /* nav a {
         display: inline-block;
         padding: 0 auto;
         margin: 0 auto;
+        margin-right: 30px;
         width: auto;
-    }
+        gap: 3%;
+    } */
 
-    nav button {
+    /* nav button {
         max-width:100px;
-    }
+    } */
 
     .head {
         width: 80%;
@@ -363,11 +393,19 @@ footer {
         width: 45%;
         padding: 5px;
         margin: 5px 5px 5px 40px;
+        min-height: 240px;
+    }
+
+    .about_us p {
+        width: 40%;
+        /* float: right;
+        margin-right: 20px; */
     }
     
     .about_us {
         display: table;
         min-height: 250px;
+        height: auto;
     }
 
     .dt {
@@ -392,6 +430,7 @@ footer {
     
     .services div {
         margin: 5px;
+        padding-bottom: 20%;
     }
 
     .services img {
@@ -431,6 +470,10 @@ footer {
     .our_vision div{
         max-width: 600px;
         height: auto;
+    }
+
+    .team .two,.four {
+        margin-bottom: 0px;
     }
     
     .team {
@@ -479,8 +522,8 @@ footer {
         margin-left: 5%;
     }
 
-   h2 {
-        margin-left : 5%;
+    h2 {
+        margin-left: 5%;
     }
 
     .message {
