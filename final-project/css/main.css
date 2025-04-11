@@ -1,8 +1,18 @@
-* {
-    font-family: "Open Sans", sans-serif;
-    width: auto;
+/* reset.css */
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
   }
 
 .menu {
@@ -52,7 +62,7 @@ nav li:nth-child(1) a{
 
 nav li:nth-child(1){
     background-color: #c78c06;
-    height: 20px;
+    height: 50px;
     text-align: center center;
     /* display: block; */
     color:#222;
@@ -330,7 +340,7 @@ footer {
     }
 
     .logo img {
-        width: 60px;
+        width: 70px;
         padding: 40px 0;
         margin: 40px;
         margin-left: 70px;
