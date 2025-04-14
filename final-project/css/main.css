@@ -266,7 +266,7 @@ p {
     width: 100%;
 }
 
-/* div for Flexbox properties */
+/* div for flexbox properties */
 .team div {
     display: flex;
     background-color: #ffe6ac;
@@ -355,7 +355,7 @@ footer {
     padding: 5px;
 }
 
-/* ===== Responsive Design (Min-width: 760px) ===== */
+/* ===== responsive design (min-width: 760px) ===== */
 @media screen and (min-width: 760px) {
 
     .logo {
@@ -370,7 +370,8 @@ footer {
         margin: 40px;
         margin-left: 70px;
     }
-    
+
+    /* adjustment for desktop ver.     */
     .nav {
         height: 120px;
         white-space: nowrap;
@@ -389,13 +390,15 @@ footer {
         height: auto;
     }
 
-    .about_us img{
+    /* using float property for img*/
+    .about_us img {
         float: left;
         max-width: 40%;
         padding: 5px 0;
         margin: 5px 0 5px 80px;
     }
 
+    /* using float property for h2 and p*/
     .about {
         width: 40%;
         float: right;
@@ -408,7 +411,7 @@ footer {
         height: auto;
     }
     
-    /* setting for Grid properties */
+    /* setting for grid properties */
         .dt {
             grid-area: dt;
         }
@@ -467,10 +470,12 @@ footer {
         margin: 0 40px;
     }
 
+    /* remove the margin */
     .team .two,.four {
         margin-bottom: 0px;
     }
     
+    /* flexbox property for team section */
     .team {
         margin-left: 5%;
         max-width: 90%; 
@@ -481,58 +486,62 @@ footer {
         align-items: stretch;
     }
 
+    /* fill container with the same aspect ratio */
     .team img {
         object-fit: cover;     
     }
 
-    .one {
-        flex-basis: 50%;
-        order: 1;
-        margin: 0;
-    }
+    /* flexbox setting */
+        .one {
+            flex-basis: 50%;
+            order: 1;
+            margin: 0;
+        }
 
-    .two {
-        flex-basis: 50%;
-        order: 2;
-        margin: 0;
-    }
+        .two {
+            flex-basis: 50%;
+            order: 2;
+            margin: 0;
+        }
 
-    .three {
-        flex-basis: 50%;
-        order: 4;
-    }
-    .four {
-        flex-basis: 50%;
-        order: 3;
-    }
+        .three {
+            flex-basis: 50%;
+            order: 4;
+        }
+        
+        .four {
+            flex-basis: 50%;
+            order: 3;
+        }
 
-    .contact {
-        display: flex;
-        flex-direction: row; /*column, it would be horizontal*/
-        flex-wrap: wrap; /*nowrap*/
-        align-items: flex-start;
-        width: 93%;
-        gap: 10px;
-        margin-left: 5%;
-    }
+    /* organization of parts using flexbox property */
+        .contact {
+            display: flex;
+            flex-direction: row; /*column, it would be horizontal*/
+            flex-wrap: wrap; /*nowrap*/
+            align-items: flex-start;
+            width: 93%;
+            gap: 10px;
+            margin-left: 5%;
+        }
 
-    h2 {
-        margin-left: 5%;
-    }
+        h2 {
+            margin-left: 5%;
+        }
 
-    .message {
-        flex-basis: calc(48% - 4px);
-        order: 1;
-    }
+        .message {
+            flex-basis: calc(48% - 4px);
+            order: 1;
+        }
 
-    .location {
-        flex-basis: 49%;
-        order: 2;
-    }
+        .location {
+            flex-basis: 49%;
+            order: 2;
+        }
 
-    .hour {
-        flex-grow: 2;
-        order: 3;
-        max-width: 96%;
-    }
+        .hour {
+            flex-grow: 2;
+            order: 3;
+            max-width: 96%;
+        }
 }
